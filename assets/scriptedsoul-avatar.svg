@@ -1,0 +1,89 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="72%">
+      <stop offset="0%" stop-color="#121d34"/>
+      <stop offset="32%" stop-color="#0d1428"/>
+      <stop offset="100%" stop-color="#050b14"/>
+    </radialGradient>
+    <linearGradient id="aura" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7df9ff"/>
+      <stop offset="45%" stop-color="#7a8cff"/>
+      <stop offset="100%" stop-color="#ff7edb"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#8dffd7"/>
+      <stop offset="100%" stop-color="#59d7ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="256" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="url(#aura)" stroke-opacity="0.2" stroke-width="2.5"/>
+  <circle cx="256" cy="256" r="198" fill="none" stroke="url(#mint)" stroke-opacity="0.16" stroke-width="1.4"/>
+
+  <g opacity="0.68" stroke="url(#aura)" stroke-width="2" fill="none">
+    <path d="M110 170 L170 170 L170 234"/>
+    <path d="M402 170 L342 170 L342 234"/>
+    <path d="M110 342 L170 342 L170 278"/>
+    <path d="M402 342 L342 342 L342 278"/>
+    <circle cx="170" cy="170" r="5" fill="#7df9ff"/>
+    <circle cx="342" cy="170" r="5" fill="#7df9ff"/>
+    <circle cx="170" cy="342" r="5" fill="#7df9ff"/>
+    <circle cx="342" cy="342" r="5" fill="#7df9ff"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M340 116
+             C301 92, 244 90, 195 115
+             C151 137, 122 180, 122 231
+             C122 275, 145 307, 193 326
+             L241 346
+             C279 363, 298 382, 298 410
+             C298 444, 264 465, 220 465
+             C183 465, 149 451, 128 424
+             L172 390
+             C186 402, 200 409, 220 409
+             C240 409, 255 398, 255 380
+             C255 361, 239 350, 205 338
+             L156 320
+             C113 304, 91 271, 91 226
+             C91 170, 125 127, 180 102
+             C223 83, 281 86, 332 116
+             L340 116 Z
+             M226 173
+             C200 173, 177 185, 177 210
+             C177 233, 196 244, 234 254
+             L271 264
+             C314 275, 340 292, 340 330
+             C340 382, 299 421, 236 421
+             C191 421, 151 405, 129 374
+             L169 341
+             C185 358, 205 368, 232 368
+             C260 368, 277 357, 277 336
+             C277 314, 261 303, 222 292
+             L178 279
+             C136 266, 114 243, 114 203
+             C114 165, 146 140, 197 140
+             C212 140, 223 142, 240 147
+             L226 173 Z" fill="url(#aura)"/>
+  </g>
+
+  <path d="M150 256 C185 212, 224 197, 256 197 C299 197, 335 216, 365 256" fill="none" stroke="url(#mint)" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <path d="M150 256 C185 299, 224 314, 256 314 C299 314, 335 294, 365 256" fill="none" stroke="url(#mint)" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+
+  <g fill="#dffaff" opacity="0.9">
+    <circle cx="118" cy="148" r="4"/>
+    <circle cx="395" cy="146" r="4"/>
+    <circle cx="98" cy="366" r="3.5"/>
+    <circle cx="417" cy="345" r="3.5"/>
+    <circle cx="256" cy="94" r="4"/>
+    <circle cx="256" cy="418" r="4"/>
+  </g>
+</svg>
